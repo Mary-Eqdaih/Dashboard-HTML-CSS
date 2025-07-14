@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+/* Start Sidebar */
+.sidebar {
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+
+}
+.sidebar .menu {
+  padding-top: 40px;
+}
+.sidebar .menu li {
+  display: flex;
+ align-items: center;
+  padding:  15px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  color: black;
+  margin-bottom: 10px;
+  transition: 0.3s;
+  
+}
+
+.sidebar .menu li:hover,
+.sidebar .menu li.active{
+    background-color: #EEE;
+}
+.sidebar .menu li a {
+ color: black;  
+}
+
+
+.sidebar .menu li i {
+  margin-right: 10px;
+}
+.sidebar h3 {
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sidebar h3::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 1;
+  border: 5px solid white;
+}
+.sidebar h3::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+}
+@media (max-width: 768px) {
+.sidebar h3::before,
+.sidebar h3::after{
+  display: none;
+}
+.sidebar h3{
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.sidebar .menu span{
+  display: none;
+}
+.sidebar {
+  width: 60px;
+}
+.sidebar .menu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+
+} 
+.sidebar .menu li i{
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+}
+@media (min-width:768px) and (max-width:1199px){
+
+}
+
+/* End Sidebar */
