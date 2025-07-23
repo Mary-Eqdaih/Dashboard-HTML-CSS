@@ -495,5 +495,37 @@ background-color: var(--green-color);
   border-top-color: var(--green-color);
 }
 /* End Targets Widget */
+/* Start Tickets Widget */
+.tickets .info{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+ 
+}
+.tickets .info .box{
+   text-align: center;
+  border: 1px solid rgb(183, 183, 183);
 
+}
+.tickets .info .box p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.tickets .info .box i {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.tickets .info .box i.fa-rectangle-list{
+color: var(--orange-color);
+}
+.tickets .info .box i.fa-spinner{
+  color: var(--blue-color);
+}
+.tickets .info .box i.fa-circle-check{
+  color: var(--green-color);
+}
+.tickets .info .box i.fa-rectangle-xmark{
+  color: var(--red-color);
+}
+/* End Tickets Widget */
 /* End content Widgets */
