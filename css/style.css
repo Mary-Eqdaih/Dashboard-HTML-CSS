@@ -45,6 +45,10 @@ ul {
   height: 100vh;
   padding-top: 20px;
   background-color: white;
+  position: fixed;
+  z-index: 1;
+
+  
 }
 .sidebar .menu {
   padding: 40px 20px;
@@ -135,6 +139,7 @@ ul {
 }
 .content {
   width: 100%;
+  margin-left: 250px;
 }
 .content .head {
   background-color: white;
@@ -281,6 +286,7 @@ ul {
   color: var(--grey-color);
   font-size: 14px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .content .wrapper .welcome .pt4 {
@@ -300,20 +306,27 @@ ul {
   background-color: var(--blue-alt-color);
 }
 @media (max-width: 768px) {
-  .content .wrapper {
-    grid-template-columns: minmax(200px, 1fr);
-    margin: 0 10px;
+  .content .wrapper .welcome{
     text-align: center;
+  }
+  .content .wrapper {
+     grid-template-columns: minmax(200px, 1fr);
+    margin: 0 10px;
+  }
+  .content .wrapper .welcome .pt3 {
+    
+    flex-direction: column;
   }
 }
 @media (min-width: 768px) and(max-width:1199px) {
-  .content .wrapper {
+  .content .wrapper .welcome {
     grid-template-columns: minmax(200px, 1fr);
     margin: 0 10px;
     text-align: center;
   }
 }
 /* End  Welcome Widget */
+/* Start Draft Widgets */
 .content .wrapper .draft form {
   display: flex;
   align-items: center;
@@ -352,7 +365,129 @@ ul {
 .content .wrapper .draft form input[type="submit"]:hover {
   background-color: var(--blue-alt-color);
 }
-/* Start Draft Widgets */
-
 /* End Draft Widgets */
+/* Start Targets Widget */
+
+.content .wrapper .targets .targ {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.content .wrapper .targets .targ i.fa-dollar-sign {
+  background-color: #cce3ff;
+  color: var(--blue-color);
+}
+.content .wrapper .targets .targ i.fa-code {
+  background-color: #fdecce;
+  color: var(--orange-color);
+}
+.content .wrapper .targets .targ i.fa-user {
+  background-color: #d3f3df;
+  color: var(--green-color);
+}
+.content .wrapper .targets .targ i {
+  font-size: 25px;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-weight: 900;
+}
+.content .wrapper .targets .targ .info {
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+
+}
+.content .wrapper .targets .targ .info h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.content .wrapper .targets .targ .info p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--grey-color);
+  margin-bottom: 5px;
+}
+.content .wrapper .targets .targ .info .progress {
+  height: 4px;
+ position: relative;
+ width: 100%;
+ 
+}
+.content .wrapper .targets .targ .info .progress.blue {
+  background-color: #cce3ff;
+}
+.content .wrapper .targets .targ .info .progress.orange {
+  background-color: #fdecce;
+}
+.content .wrapper .targets .targ .info .progress.green {
+  background-color: #d3f3df;
+}
+.content .wrapper .targets .targ .info .progress .bar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+}
+.content .wrapper .targets .targ .info .progress .bar.blue {
+  background-color: var(--blue-color);
+}
+.content .wrapper .targets .targ .info .progress .bar.orange {
+  background-color: var(--orange-color);
+}
+.content .wrapper .targets .targ .info .progress .bar.green {
+  background-color: var(--green-color);
+}
+
+.content .wrapper .targets .targ .info .progress  .label{
+position: absolute;
+width: 20px;
+height: 20px;
+padding: 15px;
+ display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 12px;
+border-radius: 6px;
+ bottom: 16px;
+  right: -16px;
+}
+.content .wrapper .targets .targ .info .progress .label.blue{
+
+background-color: var(--blue-color);
+}
+.content .wrapper .targets .targ .info .progress .label.orange{
+
+background-color: var(--orange-color);
+}
+.content .wrapper .targets .targ .info .progress .label.green{
+ 
+background-color: var(--green-color);
+}
+.content .wrapper .targets .targ .info .progress .label::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+
+}
+.content .wrapper .targets .targ .info .progress .label.blue::after{
+  border-top-color: var(--blue-color);
+}
+.content .wrapper .targets .targ .info .progress .label.orange::after{
+  border-top-color: var(--orange-color);
+}
+.content .wrapper .targets .targ .info .progress .label.green::after{
+  border-top-color: var(--green-color);
+}
+/* End Targets Widget */
+
 /* End content Widgets */
