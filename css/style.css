@@ -609,4 +609,20 @@ margin-bottom: 10px;
   opacity: 0.3;
 }
 /* End Tasks Widget */
+/* Start Search Widget */
+.search .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search .info:nth-of-type(2) p{
+color: rgb(154, 154, 154);
+}
+.search .info:not(:nth-of-type(2)) p:last-child{
+  background-color: rgb(220, 220, 220);
+  padding:   5px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+/* End Search Widget */
 /* End content Widgets */
