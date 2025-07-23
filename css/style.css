@@ -221,6 +221,12 @@ ul {
   width: 150px;
   background-color: white;
 }
+@media (max-width: 768px) {
+.content{
+  margin-left: 60px;
+}
+}
+
 /* End head */
 /* Start content Widgets */
 .content .wrapper {
