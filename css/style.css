@@ -47,8 +47,6 @@ ul {
   background-color: white;
   position: fixed;
   z-index: 1;
-
-  
 }
 .sidebar .menu {
   padding: 40px 20px;
@@ -222,9 +220,9 @@ ul {
   background-color: white;
 }
 @media (max-width: 768px) {
-.content{
-  margin-left: 60px;
-}
+  .content {
+    margin-left: 60px;
+  }
 }
 
 /* End head */
@@ -312,15 +310,14 @@ ul {
   background-color: var(--blue-alt-color);
 }
 @media (max-width: 768px) {
-  .content .wrapper .welcome{
+  .content .wrapper .welcome {
     text-align: center;
   }
   .content .wrapper {
-     grid-template-columns: minmax(200px, 1fr);
+    grid-template-columns: minmax(200px, 1fr);
     margin: 0 10px;
   }
   .content .wrapper .welcome .pt3 {
-    
     flex-direction: column;
   }
 }
@@ -404,7 +401,6 @@ ul {
   /* display: flex;
   flex-direction: column; */
   width: 100%;
-
 }
 .content .wrapper .targets .targ .info h3 {
   margin-top: 0;
@@ -420,9 +416,8 @@ ul {
 }
 .content .wrapper .targets .targ .info .progress {
   height: 4px;
- position: relative;
- width: 100%;
- 
+  position: relative;
+  width: 100%;
 }
 .content .wrapper .targets .targ .info .progress.blue {
   background-color: #cce3ff;
@@ -438,7 +433,6 @@ ul {
   height: 100%;
   top: 0;
   left: 0;
-  
 }
 .content .wrapper .targets .targ .info .progress .bar.blue {
   background-color: var(--blue-color);
@@ -450,31 +444,28 @@ ul {
   background-color: var(--green-color);
 }
 
-.content .wrapper .targets .targ .info .progress  .label{
-position: absolute;
-width: 20px;
-height: 20px;
-padding: 15px;
- display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-font-size: 12px;
-border-radius: 6px;
- bottom: 16px;
+.content .wrapper .targets .targ .info .progress .label {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  border-radius: 6px;
+  bottom: 16px;
   right: -16px;
 }
-.content .wrapper .targets .targ .info .progress .label.blue{
-
-background-color: var(--blue-color);
+.content .wrapper .targets .targ .info .progress .label.blue {
+  background-color: var(--blue-color);
 }
-.content .wrapper .targets .targ .info .progress .label.orange{
-
-background-color: var(--orange-color);
+.content .wrapper .targets .targ .info .progress .label.orange {
+  background-color: var(--orange-color);
 }
-.content .wrapper .targets .targ .info .progress .label.green{
- 
-background-color: var(--green-color);
+.content .wrapper .targets .targ .info .progress .label.green {
+  background-color: var(--green-color);
 }
 .content .wrapper .targets .targ .info .progress .label::after {
   content: "";
@@ -483,29 +474,26 @@ background-color: var(--green-color);
   left: 50%;
   transform: translateX(-50%);
   border: 5px solid transparent;
-
 }
-.content .wrapper .targets .targ .info .progress .label.blue::after{
+.content .wrapper .targets .targ .info .progress .label.blue::after {
   border-top-color: var(--blue-color);
 }
-.content .wrapper .targets .targ .info .progress .label.orange::after{
+.content .wrapper .targets .targ .info .progress .label.orange::after {
   border-top-color: var(--orange-color);
 }
-.content .wrapper .targets .targ .info .progress .label.green::after{
+.content .wrapper .targets .targ .info .progress .label.green::after {
   border-top-color: var(--green-color);
 }
 /* End Targets Widget */
 /* Start Tickets Widget */
-.tickets .info{
+.tickets .info {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
- 
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
-.tickets .info .box{
-   text-align: center;
+.tickets .info .box {
+  text-align: center;
   border: 1px solid rgb(183, 183, 183);
-
 }
 .tickets .info .box p {
   font-size: 13px;
@@ -515,17 +503,73 @@ background-color: var(--green-color);
   font-size: 25px;
   margin-bottom: 10px;
 }
-.tickets .info .box i.fa-rectangle-list{
-color: var(--orange-color);
+.tickets .info .box i.fa-rectangle-list {
+  color: var(--orange-color);
 }
-.tickets .info .box i.fa-spinner{
+.tickets .info .box i.fa-spinner {
   color: var(--blue-color);
 }
-.tickets .info .box i.fa-circle-check{
+.tickets .info .box i.fa-circle-check {
   color: var(--green-color);
 }
-.tickets .info .box i.fa-rectangle-xmark{
+.tickets .info .box i.fa-rectangle-xmark {
   color: var(--red-color);
 }
 /* End Tickets Widget */
+/* Start News Widget */
+.news .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px;
+}
+.news .info:not(:last-child){
+  border-bottom: 1px solid rgb(224, 224, 224) ;
+}
+.news .info img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.news .info .text {
+  flex: 1;
+}
+.news .info .text h4 {
+  margin: 0;
+}
+.news .info .text p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.news .info span {
+  font-size: 13px;
+  background-color: #d9d9d9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .news {
+    text-align: center;
+  }
+  .news .info {
+    flex-direction: column;
+  }
+  .news .info .text{
+    margin: 15px 0;
+  }
+}
+@media (min-width: 768px) and(max-width:1199px) {
+  .news {
+    text-align: center;
+  }
+  .news .info {
+    flex-direction: column;
+  }
+  .news .info .text{
+    margin: 15px 0;
+  }
+}
+/* End News Widget */
 /* End content Widgets */
