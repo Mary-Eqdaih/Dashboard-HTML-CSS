@@ -625,4 +625,35 @@ color: rgb(154, 154, 154);
   font-size: 12px;
 }
 /* End Search Widget */
+/* Start Uploads Widget */
+.uploads .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.uploads .info:not(:last-child){
+  border-bottom: 1px solid rgb(232, 232, 232);
+}
+.uploads .info img{
+  width: 40px;
+  margin-right: 10px;
+}
+.uploads .info .text{
+  flex: 1;
+}
+.uploads .info .text p:first-child{
+  color: black;
+  font-weight: 500;
+}
+.uploads .info .text p{
+margin-bottom: 0;
+}
+.uploads .info span{
+  background-color: #dedede;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+/* End Uploads Widget */
 /* End content Widgets */
