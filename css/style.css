@@ -770,62 +770,126 @@ ul {
 /* End Reminders Widget */
 
 /* Start Latest Posts Widget */
-.posts .info{
+.posts .info {
   display: flex;
   align-items: center;
-  border-bottom:1px solid rgb(224, 224, 224) ;
+  border-bottom: 1px solid rgb(224, 224, 224);
   padding: 20px 0;
 }
-.posts .info img{
+.posts .info img {
   width: 50px;
   margin-right: 20px;
 }
-.posts .info p{
+.posts .info p {
   margin: 0;
   font-weight: bold;
-
-
 }
-.posts .info span{
+.posts .info span {
   display: block;
   color: var(--grey-color);
   font-weight: 600;
   font-size: 14px;
   margin-top: 10px;
 }
-.posts > p{
+.posts > p {
   line-height: 1.8;
   color: black;
   font-weight: 500;
   width: 500px;
-  padding:  20px 0;
-  border-bottom:1px solid rgb(224, 224, 224) ;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
-.posts .btns{
+.posts .btns {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.posts .btns .btn{
+.posts .btns .btn {
   display: flex;
   align-items: center;
   color: var(--grey-color);
 }
 
-.posts .btns .btn i{
+.posts .btns .btn i {
   margin-right: 5px;
 }
 @media (max-width: 768px) {
-.posts > p{
-  text-align: center;
-  width: 100%;
-}
+  .posts > p {
+    text-align: center;
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and(max-width:1199px) {
- .posts > p{
-  text-align: center;
-   width: 100%;
-}
+  .posts > p {
+    text-align: center;
+    width: 100%;
+  }
 }
 /* End Latest Posts Widget */
+/* Start Stats  Widget*/
+.stats .info {
+  margin-top: 20px;
+}
+.fa-twitter {
+  background-color: #1da1f2;
+  color:#1da1f2 ;
+}
+.fa-facebook-f {
+  background-color: #1877f2;
+  color: #1877f2;
+}
+.fa-linkedin {
+  background-color: #0a66c2;
+  color:#0a66c2 ;
+}
+.fa-youtube {
+  background-color: #ff0000;
+  color: #ff0000;
+}
+.stats .info .stat {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.stats .info .stat.facebook {
+  background-color:#1876f238 ;
+}
+.stats .info .stat.twitter {
+  background-color:#1da0f217 ;
+}
+.stats .info .stat.linkedin {
+  background-color: #0a66c235;
+}
+.stats .info .stat.youtube {
+  background-color: #ff000025;
+}
+.stats .info .stat i {
+  transition: 0.3s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 15px 30px;
+  margin-right: 10px;
+}
+
+.stats .info .stat i:hover {
+  transform: rotate(8deg);
+}
+.stats .info .stat p {
+  flex: 1;
+ background-color: transparent;
+}
+.stats .info .stat a {
+  margin-right: 10px;
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* End Stats Widget*/
 /* End content Widgets */
