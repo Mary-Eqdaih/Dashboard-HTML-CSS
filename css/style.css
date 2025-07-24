@@ -239,14 +239,14 @@ ul {
   overflow: hidden;
   padding: 20px;
 }
-.content .wrapper .text {
+.content .wrapper .box > .text {
   margin-bottom: 15px;
 }
-.content .wrapper .text p {
+.content .wrapper .box > .text p {
   margin-top: 8px;
   color: var(--grey-color);
 }
-.content .wrapper .text h2 {
+.content .wrapper .box > .text h2 {
   margin: 0;
 }
 /* Start Welcome Widget */
@@ -527,8 +527,8 @@ ul {
   margin-top: 20px;
   padding: 15px;
 }
-.news .info:not(:last-child){
-  border-bottom: 1px solid rgb(224, 224, 224) ;
+.news .info:not(:last-child) {
+  border-bottom: 1px solid rgb(224, 224, 224);
 }
 .news .info img {
   width: 100px;
@@ -559,7 +559,7 @@ ul {
   .news .info {
     flex-direction: column;
   }
-  .news .info .text{
+  .news .info .text {
     margin: 15px 0;
   }
 }
@@ -570,90 +570,201 @@ ul {
   .news .info {
     flex-direction: column;
   }
-  .news .info .text{
+  .news .info .text {
     margin: 15px 0;
   }
 }
 /* End News Widget */
 /* Start Tasks Widget */
-.tasks .info{
+.tasks .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:   8px 0;
+  padding: 8px 0;
+  margin-top: 5px;
 }
-.tasks .info:not(:last-child){
+.tasks .info:not(:last-child) {
   border-bottom: 1px solid rgb(217, 217, 217);
 }
-.tasks .info .text p:first-child{
-font-weight: bold;
-color: black;
-margin-bottom: 10px;
+.tasks .info .text {
+  padding: 5px;
 }
-.tasks .info .text p:last-child{
+.tasks .info .text p:first-child {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+.tasks .info .text p:last-child {
   margin-bottom: 0;
 }
 
-.tasks .info i{
+.tasks .info i {
   transition: 0.3s;
 }
-.tasks .info i:hover{
+.tasks .info i:hover {
   color: red;
-
 }
-.tasks .info.blur p{
+.tasks .info.blur p {
   text-decoration: line-through;
-
 }
 .tasks .info.blur {
   opacity: 0.3;
 }
 /* End Tasks Widget */
 /* Start Search Widget */
-.search .info{
+.search .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.search .info:nth-of-type(2) p{
-color: rgb(154, 154, 154);
+.search .info:nth-of-type(2) p {
+  color: rgb(154, 154, 154);
 }
-.search .info:not(:nth-of-type(2)) p:last-child{
+.search .info:not(:nth-of-type(2)) p:last-child {
   background-color: rgb(220, 220, 220);
-  padding:   5px;
+  padding: 5px;
   border-radius: 6px;
   font-size: 12px;
 }
 /* End Search Widget */
 /* Start Uploads Widget */
-.uploads .info{
+.uploads .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  padding: 10px;
 }
-.uploads .info:not(:last-child){
+.uploads .info:not(:last-child) {
   border-bottom: 1px solid rgb(232, 232, 232);
 }
-.uploads .info img{
-  width: 40px;
+.uploads .info img {
+  width: 35px;
   margin-right: 10px;
 }
-.uploads .info .text{
+.uploads .info .text {
   flex: 1;
 }
-.uploads .info .text p:first-child{
+.uploads .info .text p:first-child {
   color: black;
   font-weight: 500;
+  margin-top: 0;
 }
-.uploads .info .text p{
-margin-bottom: 0;
+.uploads .info .text p {
+  margin-bottom: 0;
+  margin-top: 5px;
+  color: gray;
 }
-.uploads .info span{
+.uploads .info span {
   background-color: #dedede;
   padding: 5px 10px;
   border-radius: 6px;
   font-size: 12px;
 }
 /* End Uploads Widget */
+/* Start Project Progress Widget*/
+.progress .menu {
+  position: relative;
+  margin-top: 25px;
+}
+.progress .menu::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  height: 100%;
+  width: 2px;
+  background-color: var(--blue-color);
+}
+.progress .menu li {
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.progress .menu li:not(:last-child) {
+  padding-bottom: 30px;
+}
+.progress .menu li::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid white;
+  left: 0;
+  top: 0;
+  outline: 2px solid var(--blue-color);
+}
+.progress .menu li.done::before {
+  background-color: var(--blue-color);
+}
+.progress .menu li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+@keyframes change-color {
+  0% {
+    background-color: var(--blue-color);
+  }
+  100% {
+    background-color: white;
+  }
+}
+/* End Project Progress Widget*/
+/* Start Reminders Widget */
+
+.reminders .menu {
+  margin-top: 25px;
+  margin-left: 30px;
+}
+.reminders .menu li::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: -30px;
+  top: 50%;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  transform: translateY(-50%);
+}
+.reminders .menu li {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  position: relative;
+}
+
+.reminders .menu li.red {
+  border-left: 2px solid var(--red-color);
+}
+.reminders .menu li.blue {
+  border-left: 2px solid var(--blue-color);
+}
+.reminders .menu li.green {
+  border-left: 2px solid var(--green-color);
+}
+.reminders .menu li.orange {
+  border-left: 2px solid var(--orange-color);
+}
+.reminders .menu li.red::before {
+  background-color: var(--red-color);
+}
+.reminders .menu li.blue::before {
+  background-color: var(--blue-color);
+}
+.reminders .menu li.green::before {
+  background-color: (--green-color);
+}
+.reminders .menu li.orange::before {
+  background-color: var(--orange-color);
+}
+.reminders .menu li span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--grey-color);
+}
+/* End Reminders Widget */
 /* End content Widgets */
