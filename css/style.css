@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 :root {
   --blue-color: #0075ff;
   --blue-alt-color: #0d69d5;
@@ -767,4 +768,64 @@ ul {
   color: var(--grey-color);
 }
 /* End Reminders Widget */
+
+/* Start Latest Posts Widget */
+.posts .info{
+  display: flex;
+  align-items: center;
+  border-bottom:1px solid rgb(224, 224, 224) ;
+  padding: 20px 0;
+}
+.posts .info img{
+  width: 50px;
+  margin-right: 20px;
+}
+.posts .info p{
+  margin: 0;
+  font-weight: bold;
+
+
+}
+.posts .info span{
+  display: block;
+  color: var(--grey-color);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.posts > p{
+  line-height: 1.8;
+  color: black;
+  font-weight: 500;
+  width: 500px;
+  padding:  20px 0;
+  border-bottom:1px solid rgb(224, 224, 224) ;
+}
+.posts .btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.posts .btns .btn{
+  display: flex;
+  align-items: center;
+  color: var(--grey-color);
+}
+
+.posts .btns .btn i{
+  margin-right: 5px;
+}
+@media (max-width: 768px) {
+.posts > p{
+  text-align: center;
+  width: 100%;
+}
+}
+@media (min-width: 768px) and(max-width:1199px) {
+ .posts > p{
+  text-align: center;
+   width: 100%;
+}
+}
+/* End Latest Posts Widget */
 /* End content Widgets */
