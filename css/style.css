@@ -1273,6 +1273,7 @@ margin: 0 10px;
 text-align: center;
 transition: 0.3s;
 cursor: pointer;
+margin-bottom: 15px;
 }
 .servers .server label{
 display: block;
@@ -1291,7 +1292,16 @@ display: block;
   border-color: var(--blue-color);
    color: var(--blue-color);
 }
-
+@media (max-width: 768px) {
+  .servers{
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and(max-width:1199px) {
+  .servers{
+    flex-direction: column;
+  }
+}
 /* End Backup Manager Widget */
 
 /* End content Widgets  */
