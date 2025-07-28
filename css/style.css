@@ -1261,24 +1261,23 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-margin-top: 30px;
-
+  margin-top: 30px;
 }
-.servers .server{
-border: 2px solid black;
-padding: 30px 0;
-width: 100%;
-border-radius: 10px;
-margin: 0 10px;
-text-align: center;
-transition: 0.3s;
-cursor: pointer;
-margin-bottom: 15px;
+.servers .server {
+  border: 2px solid black;
+  padding: 30px 0;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 10px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-bottom: 15px;
 }
-.servers .server label{
-display: block;
+.servers .server label {
+  display: block;
 }
-.servers .server label  i{
+.servers .server label i {
   margin-bottom: 15px;
   display: block;
   font-size: 20px;
@@ -1286,19 +1285,18 @@ display: block;
 .servers input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
-
 }
-.servers input[type="radio"]:checked + .server{
+.servers input[type="radio"]:checked + .server {
   border-color: var(--blue-color);
-   color: var(--blue-color);
+  color: var(--blue-color);
 }
 @media (max-width: 768px) {
-  .servers{
+  .servers {
     flex-direction: column;
   }
 }
 @media (min-width: 768px) and(max-width:1199px) {
-  .servers{
+  .servers {
     flex-direction: column;
   }
 }
@@ -1306,3 +1304,159 @@ display: block;
 
 /* End content Widgets  */
 /* End Settings Style */
+
+/* Start Profile Style */
+/* Start content Widgets  */
+/* Start Profile Widget  */
+.profile {
+  display: flex;
+
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+}
+.profile > .info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid rgb(210, 210, 210);
+  padding: 30px;
+}
+.profile > .info img {
+  width: 130px;
+  margin-bottom: 10px;
+}
+.profile > .info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.profile > .info p {
+  color: var(--grey-color);
+  font-weight: 500;
+  position: relative;
+}
+.profile > .info .bar {
+  width: 140px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(234, 234, 234);
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.profile > .info .bar > span {
+  position: absolute;
+  width: 90px;
+  height: 5px;
+  background-color: var(--blue-color);
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+.profile > .info > span {
+  margin-top: 20px;
+  color: var(--grey-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+.general {
+
+  width: 100%;
+}
+.general .row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  
+}
+.general .row:not(:last-child){
+border-bottom: 1px solid rgb(210, 210, 210);
+}
+.general .row .title {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+}
+.general .row .row-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -20px;
+  flex-wrap: wrap;
+ 
+}
+
+.general .row .row-info .info{
+  min-width: 250px;
+  margin: 10px 0;
+
+}
+.general .row .row-info .info span:first-child {
+  font-size: 14px;
+  color: gray;
+  font-weight: 500;
+   
+}
+.general .row .row-info  .info  span:last-child {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+}
+.general .row  label > .toggle-checkbox:checked + .toggle-switch::before {
+  left: 60px;
+}
+.general .row  label > .toggle-switch::before {
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+}
+.general .row  label > .toggle-switch {
+  background-color: rgb(199, 199, 199);
+}
+
+@media (max-width: 768px) {
+  .profile{
+    flex-direction: column;
+  }
+  .general .row .row-info {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .profile > .info{
+    border-bottom:1px solid rgb(220, 220, 220) ;
+    border-right: 0;
+  }
+  .general .row{
+    text-align: center;
+  }
+  .general .row  label{
+   margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and(max-width:1199px) {
+
+  .profile{
+    flex-direction: column;
+  }
+  .general .row .row-info {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .profile > .info{
+    border-bottom:1px solid rgb(220, 220, 220) ;
+    border-right: 0;
+  }
+  .general .row{
+    text-align: center;
+  }
+  .general .row  label{
+   margin: 0 auto;
+  }
+}
+/* End Profile Widget  */
+
+/* Start content Widgets  */
+/* End Profile Style */
