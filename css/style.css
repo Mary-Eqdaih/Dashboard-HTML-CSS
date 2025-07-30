@@ -1406,6 +1406,11 @@ ul {
 .general .row label > .toggle-checkbox:checked + .toggle-switch::before {
   left: 60px;
 }
+
+.general .row label > .toggle-checkbox:checked +.toggle-switch{
+  background-color: var(--blue-color);
+}
+
 .general .row label > .toggle-switch::before {
   font-size: 12px;
   width: 15px;
@@ -1707,6 +1712,8 @@ ul {
 }
 
 /* End Courses Style */
+
+/* Start Friends Style */
 .friends {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1814,5 +1821,143 @@ background-color: var(--blue-color);
 .friends .friend .pt3 .btns a:last-child{
 background-color: var(--red-color);
 }
-/* Start Friends Style */
+
 /* End Friends Style */
+
+/* Start Files Page */
+
+
+
+
+.flex-file{
+  display: flex;
+ 
+}
+.flex-file .files{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 20px;
+  margin: 20px;
+  flex: 1;
+}
+.flex-file .files .file{
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px 10px;
+
+}
+
+.flex-file .files .file i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.flex-file .files .file .image{
+  text-align: center;
+  padding: 20px 0;
+}
+.flex-file .files .file .image img{
+  transition: 0.3s;
+  width: 70px;
+  margin-bottom: 15px;
+}
+.flex-file .files .file .image img:hover{
+  transform: rotate(5deg);
+}
+.flex-file .files .file > p{
+    font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-color);
+}
+
+.flex-file .files .file .image > span{
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+}
+.flex-file .files .file .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+   border-top: 1px solid rgb(237, 237, 237);
+}
+.flex-file .files .file .info > span{
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-color);
+ 
+}
+
+.flex-file .stats{
+  margin:  20px 20px 20px 0px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  padding: 20px ;
+  width: 250px;
+  height: fit-content;
+  
+}
+.flex-file .stats .info{
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 6px;
+  padding: 10px;
+
+  
+}
+.flex-file .stats .info > span{
+  display: block;
+font-size: 14px;
+font-weight: 500;
+color: var(--grey-color);
+}
+.flex-file .stats .info i{
+  margin-right: 10px;
+color: var(--blue-color);
+font-size: 16px;
+background-color: #0a66c239;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.flex-file .stats .txt {
+  flex: 1;
+}
+.flex-file .stats .txt  > span{
+display: block;
+font-size: 12px;
+font-weight: 500;
+
+}
+.flex-file .stats .txt  > span:last-child{
+  margin-top: 5px;
+  color: var(--grey-color);
+
+}
+
+.flex-file .stats .btn{
+  margin: 20px auto;
+ 
+  background-color: var(--blue-color);
+  width: fit-content;
+  padding:  10px ;
+  border-radius: 6px;
+}
+.flex-file .stats .btn a{
+  color: white;
+font-size: 14px;
+}
+.flex-file .stats .btn i{
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* End Files Page */
+/* Start Plans Page */
+/* End Plans Page */
