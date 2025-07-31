@@ -81,5 +81,4 @@ template-4/
 
 ## 🙋‍♂️ By
 
-- **Your Name**
 - GitHub: [@Mary-Eqdaih](https://github.com/Mary-eqdaih)
