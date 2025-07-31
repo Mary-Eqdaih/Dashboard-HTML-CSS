@@ -1817,7 +1817,13 @@ ul {
 .friends .friend .pt3 .btns a:last-child {
   background-color: var(--red-color);
 }
+@media (max-width: 768px) {
+.friends {
 
+  gap: 10px;
+  margin: 0 10px;
+}
+}
 /* End Friends Style */
 
 /* Start Files Page */
@@ -2059,6 +2065,9 @@ ul {
 @media (max-width: 768px) {
 .plans{
    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.plan .menu li{
+  font-size: 12px;
 }
 }
 /* End Plans Page */
