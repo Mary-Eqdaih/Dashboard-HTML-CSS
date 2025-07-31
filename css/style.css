@@ -1952,16 +1952,12 @@ ul {
 }
 .flex-file .stats{
   order: 1;
-  width: 500px;
+  width: 300px;
   margin: 0 auto;
 }
 }
-@media (min-width: 768px) and(max-width:1199px) {
-.flex-file{
-  flex-direction: column;
-}
 
-}
+
 
 /* End Files Page */
 /* Start Plans Page */
