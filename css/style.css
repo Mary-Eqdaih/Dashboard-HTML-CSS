@@ -1829,6 +1829,7 @@ ul {
   gap: 20px;
   margin: 20px;
   flex: 1;
+
 }
 .flex-file .files .file {
   background-color: white;
@@ -1886,6 +1887,7 @@ ul {
   padding: 20px;
   width: 250px;
   height: fit-content;
+  order: 1;
 }
 .flex-file .stats .info {
   display: flex;
@@ -1939,6 +1941,26 @@ ul {
   color: white;
   font-size: 14px;
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+.flex-file{
+  flex-direction: column;
+}
+.flex-file .files{
+  order: 2;
+}
+.flex-file .stats{
+  order: 1;
+  width: 500px;
+  margin: 0 auto;
+}
+}
+@media (min-width: 768px) and(max-width:1199px) {
+.flex-file{
+  flex-direction: column;
+}
+
 }
 
 /* End Files Page */
@@ -2036,4 +2058,5 @@ ul {
   font-weight: 500;
   color: var(--grey-color);
 }
+
 /* End Plans Page */
