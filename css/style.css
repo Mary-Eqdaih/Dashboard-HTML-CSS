@@ -22,6 +22,7 @@
   background-color: var(--blue-alt-color);
 }
 body {
+  background-color: black;
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -1726,6 +1727,7 @@ ul {
   border-radius: 6px;
   position: relative;
   padding: 20px;
+ 
 }
 .friends .friend .pt1 {
   text-align: center;
@@ -2054,5 +2056,9 @@ ul {
   font-weight: 500;
   color: var(--grey-color);
 }
-
+@media (max-width: 768px) {
+.plans{
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+}
 /* End Plans Page */
